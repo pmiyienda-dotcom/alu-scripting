@@ -1,3 +1,3 @@
 #!/usr/bin/env ruby
-
-i Hope Bobby eaTs Nutella - no one ever said
+# 7. OMG WHY ARE YOU SHOUTING?
+puts ARGV[0].scan(/[A-Z]/).join
