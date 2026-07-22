@@ -11,11 +11,7 @@ def top_ten(subreddit):
     for a given subreddit. Prints None if the subreddit is invalid.
     """
     url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                       "AppleWebKit/537.36 (KHTML, like Gecko) "
-                       "Chrome/120.0.0.0 Safari/537.36"
-    }
+    headers = {"User-Agent": "top-ten-checker/1.0"}
     params = {"limit": 10}
 
     response = requests.get(
